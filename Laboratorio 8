@@ -1,0 +1,17 @@
+// Definimos el pin al que está conectado el relé
+int relePin = 2;
+
+void setup() {
+  // Configuramos el pin del relé como salida
+  pinMode(relePin, OUTPUT);
+}
+
+void loop() {
+  // Encendemos el relé
+  digitalWrite(relePin, HIGH);
+  delay(1000); // Esperamos 1 segundo
+
+  // Apagamos el relé
+  digitalWrite(relePin, LOW);
+  delay(1000); // Esperamos 1 segundo
+}
